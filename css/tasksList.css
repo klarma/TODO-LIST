@@ -1,0 +1,33 @@
+.tasksList{
+    padding: 20px;
+    margin: 2px;
+    background-color: #fff;
+    list-style-type: none;
+}
+
+.tasksList__item{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tasksList__buttonDone{
+    border: none;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #eee;
+    background-color: green;
+    height: 22px;
+    width: 22px;
+}
+
+.taskList__buttonRemove{
+    /* padding: 2px; */
+    /* font-size: 16px; */
+    /* align-self: center;
+    justify-self: center; */
+    justify-self: flex-end;
+    /* align-self: flex-end; */
+    color: #eee;
+    background-color: red;
+    border:none;
+}
