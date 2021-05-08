@@ -59,7 +59,7 @@
             >
             <button class="tasksList__buttonDone js-done"><i class="fas fa-check"></i></button>
             ${task.content}
-            <button class="taskList__buttonRemove js-remove"><i class="fas fa-trash-alt"></i></button>
+            <span class="tasksList__span"><button class="taskList__buttonRemove js-remove"><i class="fas fa-trash-alt"></i></button></span>
             </li>          
             `;
         };
