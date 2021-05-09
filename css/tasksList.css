@@ -13,6 +13,10 @@
     margin-bottom: 10px;
 }
 
+.tasksList__item--done{
+    text-decoration: line-through;
+}
+
 .tasksList__spanTask {
     color: #666;
     overflow-wrap: anywhere;
