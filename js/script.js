@@ -21,7 +21,6 @@
 
     const toggleDoneTask = (taskIndex) => {
         tasks[taskIndex].done = !tasks[taskIndex].done;
-
         render();
     };
 
@@ -49,6 +48,11 @@
         });
     };
 
+    const clearForm = (newTask) => {
+        newTask.value = "";
+        newTask.focus();
+    };
+
     const render = () => {
         let htmlString = "";
 
@@ -57,7 +61,7 @@
             <li class="tasksList__item"
             ${task.done ? "style=\"text-decoration: line-through\"" : ""}
             >
-            <button class="tasksList__buttonDone js-done"><i class="fas fa-check"></i></button>
+            <button class="tasksList__buttonDone js-done">${task.done ? "<i class='fas fa-check'></i>" : ""}</button>
             ${task.content}
             <span class="tasksList__span"><button class="taskList__buttonRemove js-remove"><i class="fas fa-trash-alt"></i></button></span>
             </li>          
@@ -72,13 +76,16 @@
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        const newTask = document.querySelector(".js-newTask")
+        const newTaskContent = newTask.value.trim();
 
         if (newTaskContent === "") {
             return
         };
 
         addNewTask(newTaskContent);
+
+        clearForm(newTask);
     };
 
     const init = () => {
