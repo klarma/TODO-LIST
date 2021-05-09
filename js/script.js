@@ -62,8 +62,8 @@
             ${task.done ? "style=\"text-decoration: line-through\"" : ""}
             >
             <button class="tasksList__buttonDone js-done">${task.done ? "<i class='fas fa-check'></i>" : ""}</button>
-            ${task.content}
-            <span class="tasksList__span"><button class="taskList__buttonRemove js-remove"><i class="fas fa-trash-alt"></i></button></span>
+            <span class="tasksList__spanTask">${task.content}</span>
+            <span class="tasksList__spanRemove"><button class="taskList__buttonRemove js-remove"><i class="fas fa-trash-alt"></i></button></span>
             </li>          
             `;
         };
