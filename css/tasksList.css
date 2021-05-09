@@ -13,14 +13,14 @@
     margin-bottom: 10px;
 }
 
-.tasksList__item--done{
-    text-decoration: line-through;
-}
-
 .tasksList__spanTask {
     color: #666;
     overflow-wrap: anywhere;
     word-break: break-world;
+}
+
+.tasksList__spanTask--done {
+    text-decoration: line-through;
 }
 
 .tasksList__buttonDone {
@@ -34,7 +34,7 @@
     cursor: pointer;
 }
 
-.taskList__buttonRemove {
+.tasksList__buttonRemove {
     color: #eee;
     background-color: red;
     border: none;
