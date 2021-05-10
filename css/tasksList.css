@@ -1,6 +1,6 @@
 .tasksList {
     padding: 20px;
-    margin: 5px;
+    margin: 2px 5px;
     background-color: #fff;
     list-style-type: none;
 }
@@ -33,7 +33,7 @@
     cursor: pointer;
 }
 
-.tasksList__button--done {  
+.tasksList__button--done {
     margin-right: 10px;
     background-color: green;
 }
