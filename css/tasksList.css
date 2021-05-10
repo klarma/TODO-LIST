@@ -23,22 +23,19 @@
     text-decoration: line-through;
 }
 
-.tasksList__buttonDone {
-    border: none;
-    width: 22px;
-    height: 22px;
-    margin-right: 10px;
-    font-size: 12px;
-    color: #eee;
-    background-color: green;
-    cursor: pointer;
-}
-
-.tasksList__buttonRemove {
+.tasksList__button {
     color: #eee;
     background-color: red;
     border: none;
     cursor: pointer;
+}
+
+.tasksList__button--done {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    font-size: 12px;
+    background-color: green;
 }
 
 .tasksList__spanRemove {
