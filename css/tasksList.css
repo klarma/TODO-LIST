@@ -16,7 +16,7 @@
 .tasksList__spanTask {
     color: #666;
     overflow-wrap: anywhere;
-    word-break: break-world;
+    word-break: break-word;
 }
 
 .tasksList__spanTask--done {
