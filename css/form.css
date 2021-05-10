@@ -7,13 +7,7 @@
     background-color: #fff;
 }
 
-@media (max-width: 700px) {
-    .form {
-        grid-template-columns: 2fr 1fr;
-    }
-}
-
-@media (max-width: 460px) {
+@media (max-width: 767px) {
     .form {
         grid-template-columns: 1fr;
     }
