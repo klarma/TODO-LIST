@@ -8,7 +8,7 @@ https://klarma.github.io/TODO-LIST/
 
 ## Description
 
-The TODO-LIST application is a simple but very practical project based on js. It contains *BEM, Grid, ES6+ features: const, let, bloki, arrow functions*. I don't use more advanced solutions but instead ** I pay attention to details when writing the code and the ability to work in accordance with good practices **. The correctness of my work is supervised by [Krzysztof Dąbrowski](https://www.linkedin.com/in/dabrowskisoftware) - an experienced Senior Software Engineer.
+The TODO-LIST application is a simple but very practical project based on js. It contains *BEM, Grid, ES6+ features: const, let, blocks, arrow functions*. I don't use more advanced solutions but instead ** I pay attention to details when writing the code and the ability to work in accordance with good practices **. The correctness of my work is supervised by [Krzysztof Dąbrowski](https://www.linkedin.com/in/dabrowskisoftware) - an experienced Senior Software Engineer.
 
 ## How to use 
 
