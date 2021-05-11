@@ -7,7 +7,7 @@
 
 .tasksList__item {
     display: grid;
-    grid-template-columns: 1fr 70% 5fr;
+    grid-template-columns: auto 1fr auto;
     padding: 10px;
     border-bottom: 2px solid #eee;
     margin-bottom: 10px;
