@@ -34,12 +34,12 @@
     cursor: pointer;
 }
 
-.tasksList__button:active {
-     background-color: rgb(245, 68, 68);  
+.tasksList__button:hover {
+    background-color: rgb(245, 68, 68);
 }
 
-.tasksList__button:hover {
-    background-color: rgb(245, 68, 68);  
+.tasksList__button:active {
+    background-color: rgb(245, 68, 68);
 }
 
 .tasksList__button--done {
@@ -47,11 +47,11 @@
     background-color: green;
 }
 
-.tasksList__button--done:active {
+.tasksList__button--done:hover {
     background-color: rgb(5, 175, 5);
 }
 
-.tasksList__button--done:hover {
+.tasksList__button--done:active {
     background-color: rgb(5, 175, 5);
 }
 
