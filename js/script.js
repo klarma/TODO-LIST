@@ -21,7 +21,7 @@
         render();
     };
 
-    const bindEvents = () => {
+    const bindRemoveEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
         removeButtons.forEach((removeButton, taskIndex) => {
@@ -29,7 +29,9 @@
                 removeTask(taskIndex);
             });
         });
+    };
 
+    const bindToggleDoneEvents = () => {
         const toggleDoneButtons = document.querySelectorAll(".js-done");
 
         toggleDoneButtons.forEach((toggleDoneButton, taskIndex) => {
@@ -53,7 +55,8 @@
                 <button class="tasksList__button tasksList__button--done js-done">
                     ${task.done ? "<i class='fas fa-check'></i>" : ""}
                 </button>
-                <span class="tasksList__spanTask${task.done ? " tasksList__spanTask--done" : ""}">${task.content}</span>
+                <span class="tasksList__spanTask${task.done ? " tasksList__spanTask--done" : ""}">${task.content}
+                </span>
                 <span class="tasksList__spanRemove">
                     <button class="tasksList__button js-remove">
                         <i class="fas fa-trash-alt"></i>
@@ -65,7 +68,8 @@
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
-        bindEvents();
+        bindRemoveEvents();
+        bindToggleDoneEvents();
     };
 
     const onFormSubmit = (event) => {
