@@ -1,5 +1,6 @@
 .section {
     margin-top: 10px;
+    box-shadow: 0 0 5px #ddd;
 }
 
 .section__header {

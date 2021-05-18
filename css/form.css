@@ -15,13 +15,21 @@
 
 .form__input {
     padding: 8px;
-    border: 2px solid #eee;
+    border: 1px solid #eee;
 }
 
 .form__button {
     padding: 8px;
     border: none;
-    background-color: teal;
+    background-color: hsl(180, 100%, 25%);
     color: #eee;
     cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: hsl(180, 100%, 35%);
+}
+
+.form__button:active {
+    background-color: hsl(180, 100%, 45%);
 }
