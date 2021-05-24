@@ -15,6 +15,10 @@
     margin-bottom: 10px;
 }
 
+.taskList__item--hide {
+    display: none;
+}
+
 .tasksList__spanTask {
     color: #666;
     overflow-wrap: anywhere;
@@ -54,8 +58,4 @@
 
 .tasksList__button--done:active {
     background-color: hsl(120, 100%, 45%);
-}
-
-.tasksList__spanRemove {
-    text-align: right;
 }
