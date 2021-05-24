@@ -37,6 +37,7 @@
     height: 30px;
     font-size: 10px;
     cursor: pointer;
+    transition: background-color .5s linear;
 }
 
 .tasksList__button:hover {

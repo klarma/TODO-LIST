@@ -4,11 +4,45 @@
 }
 
 .section__header {
+    display: flex;
+    justify-content: space-between;
     padding: 15px;
     margin: 2px 5px;
     background-color: #fff;
 }
 
+@media (max-width: 767px) {
+    .section__header {
+        flex-direction: column;
+    }
+    .section__span {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .section__button {
+        padding: 10px;
+    }
+}
+
 .section__button {
+    color: hsl(180, 100%, 25%);
+    font-size: 18px;
     border: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: color .5s linear;
+}
+
+.section__button:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.section__button:active {
+    color: hsl(180, 100%, 45%);
+}
+
+.section__button:disabled {
+    color: #ddd;
+    pointer-events: none;
 }
