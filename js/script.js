@@ -105,53 +105,56 @@
     };
 
     const renderButtons = () => {
-        let sectionButtons = "";
-        if (tasks.length > 0) {
-            sectionButtons = `
-              <button class="section__button js-buttonHideDoneTasks">
-                 ${hideDoneTask ? "Pokaż ukończone" : "Ukryj ukończone"}
-              </button>
-              <button class="section__button js-buttonFinishAllTasks"
-                 ${tasks.every(task => task.done) ? "disabled" : ""}>
-                  Ukończ wszystkie
-              </button>
-            `};
+        const spanForButtonsElement = document.querySelector(".js-section__span");
 
-        document.querySelector(".js-section__span").innerHTML = sectionButtons;
-    };
-
-    const render = () => {
-        renderTasks();
-        renderButtons();
-
-        bindRemoveEvents();
-        bindToggleDoneEvents();
-        bindHideTasksEvent();
-        bindFinishTasksEvent();
-    };
-
-    const onFormSubmit = (event) => {
-        event.preventDefault();
-
-        const newTaskElement = document.querySelector(".js-newTask")
-        const newTaskContent = newTaskElement.value.trim();
-
-        if (newTaskContent === "") {
-            return
+        if (!tasks.length) {
+            spanForButtonsElement.innerHTML = ""
+            return;
         };
 
-        addNewTask(newTaskContent);
+        spanForButtonsElement.innerHTML = `
+            <button class="section__button js-buttonHideDoneTasks">
+                 ${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone
+            </button>
+            <button class="section__button js-buttonFinishAllTasks"
+                 ${tasks.every(({done}) => done) ? "disabled" : ""}>
+                  Ukończ wszystkie
+            </button>
+            `;
+}; 
 
-        clearForm(newTaskElement);
+const render = () => {
+    renderTasks();
+    renderButtons();
+
+    bindRemoveEvents();
+    bindToggleDoneEvents();
+    bindHideTasksEvent();
+    bindFinishTasksEvent();
+};
+
+const onFormSubmit = (event) => {
+    event.preventDefault();
+
+    const newTaskElement = document.querySelector(".js-newTask")
+    const newTaskContent = newTaskElement.value.trim();
+
+    if (newTaskContent === "") {
+        return
     };
 
-    const init = () => {
-        render();
+    addNewTask(newTaskContent);
 
-        const form = document.querySelector(".js-form");
+    clearForm(newTaskElement);
+};
 
-        form.addEventListener("submit", onFormSubmit);
-    };
+const init = () => {
+    render();
 
-    init();
+    const form = document.querySelector(".js-form");
+
+    form.addEventListener("submit", onFormSubmit);
+};
+
+init();
 }
