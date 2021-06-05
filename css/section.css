@@ -11,12 +11,15 @@
     background-color: #fff;
 }
 
+.section__span {
+    display: flex;
+}
+
 @media (max-width: 767px) {
     .section__header {
         flex-direction: column;
     }
     .section__span {
-        display: flex;
         flex-direction: column;
         padding: 30px;
     }
@@ -29,7 +32,7 @@
     color: hsl(180, 100%, 25%);
     font-size: 18px;
     border: none;
-    background-color: #fff;
+    background-color: transparent;
     cursor: pointer;
     transition: color .5s linear;
 }
