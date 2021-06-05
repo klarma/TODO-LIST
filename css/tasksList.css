@@ -41,11 +41,11 @@
 }
 
 .tasksList__button:hover {
-    background-color: hsl(0, 100%, 60%);
+    background-color: hsl(0, 100%, 65%);
 }
 
 .tasksList__button:active {
-    background-color: hsl(0, 100%, 70%);
+    background-color: hsl(0, 100%, 75%);
 }
 
 .tasksList__button--done {
